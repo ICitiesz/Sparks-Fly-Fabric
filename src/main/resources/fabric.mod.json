@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "sparks-fly",
+	"version": "${version}",
+	"name": "Sparks Fly",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"ICities"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNUGPLv3",
+	"icon": "assets/sparks-fly/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "com.islandstudio.sparksfly.SparksFly",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "com.islandstudio.sparksfly.SparksFlyDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"sparks-fly.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.24",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.20"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
